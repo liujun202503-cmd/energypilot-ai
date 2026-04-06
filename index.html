@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="system">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EnergyPilot AI - Plan your day by energy, not just tasks</title>
+  <meta name="description" content="EnergyPilot AI turns sleep, stress, and focus signals into a smarter workday plan for busy professionals.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="#hero">
+        <span class="brand-mark">EP</span>
+        <span>EnergyPilot AI</span>
+      </a>
+      <nav class="nav">
+        <a href="#planner">Planner</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="theme-switch" aria-label="Theme switcher">
+        <button type="button" class="theme-btn active" data-theme-choice="system">System</button>
+        <button type="button" class="theme-btn" data-theme-choice="light">Light</button>
+        <button type="button" class="theme-btn" data-theme-choice="dark">Dark</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">AI energy coach for overloaded founders and teams</div>
+          <h1>Know your best move<br>before burnout steals the day.</h1>
+          <p class="hero-text">EnergyPilot turns a 60-second check-in into a clear plan for the next few hours: what to do now, what to delay, and when to recover. It is built to test paid demand fast with a Web-first launch, not bury users inside another bloated productivity dashboard.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#planner">Try the instant planner</a>
+            <a class="button button-secondary" href="#pricing">See founding access</a>
+
+          </div>
+          <div class="hero-points">
+            <span>60-second check-in</span>
+            <span>No login to try</span>
+            <span>Built for paid demand testing</span>
+
+          </div>
+        </div>
+
+        <div class="hero-panel reveal delay-1">
+          <div class="panel-glow"></div>
+          <div class="panel-header">
+            <div>
+              <div class="panel-label">Live energy snapshot</div>
+              <div class="panel-title">What should I do right now?</div>
+            </div>
+            <div class="score-ring">
+              <div class="score-ring__inner">
+                <strong id="heroScore">74</strong>
+                <span>score</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="metric-grid">
+            <article class="metric-card">
+              <span>Sleep</span>
+              <strong>7.2h</strong>
+              <small>Recovered enough for focused work</small>
+            </article>
+            <article class="metric-card">
+              <span>Stress</span>
+              <strong>Medium</strong>
+              <small>Keep meetings short and intentional</small>
+            </article>
+            <article class="metric-card">
+              <span>Focus</span>
+              <strong>High</strong>
+              <small>Spend your sharpest hour on real leverage</small>
+
+            </article>
+          </div>
+
+          <div class="recommend-card">
+            <div class="recommend-badge">AI recommendation</div>
+            <h3>Protect a 90-minute deep work block now.</h3>
+            <p>Move low-value admin after lunch, then take a 12-minute reset walk before your next collaborative task.</p>
+            <ul>
+              <li>Best next move: strategy, writing, analysis</li>
+              <li>Avoid right now: reactive inbox and long calls</li>
+              <li>Recovery cue: hydration + sunlight break</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip">
+      <div class="shell strip-inner reveal delay-2">
+        <span>Designed for busy professionals</span>
+        <span>Useful in under 60 seconds</span>
+        <span>Ideal for Web-first launch validation</span>
+        <span>Ready for Stripe conversion later</span>
+      </div>
+    </section>
+
+    <section class="value-section">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div class="eyebrow">Why this angle works overseas</div>
+          <h2>Not another to-do list. A real-time energy layer for work.</h2>
+          <p>People do not buy more dashboards. They buy clarity when their brain feels overloaded. This page leans into that exact promise.</p>
+        </div>
+
+        <div class="value-grid">
+          <article class="value-card reveal">
+            <div class="card-kicker">01</div>
+            <h3>Instant value before signup</h3>
+            <p>Visitors can try a lightweight planner first, which lowers friction and increases honest conversion signals.</p>
+          </article>
+          <article class="value-card reveal delay-1">
+            <div class="card-kicker">02</div>
+            <h3>Clear paid upgrade path</h3>
+            <p>Premium value is framed around deeper AI guidance, weekly reports, and better decision support, not generic productivity fluff.</p>
+          </article>
+          <article class="value-card reveal delay-2">
+            <div class="card-kicker">03</div>
+            <h3>Stay in wellness, not medical claims</h3>
+            <p>The message stays in productivity and recovery territory, which is much safer than over-claiming health or medical outcomes.</p>
+
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="planner-section" id="planner">
+      <div class="shell planner-grid">
+        <div class="section-head reveal">
+          <div class="eyebrow">Interactive test drive</div>
+          <h2>Give visitors a taste of the product in one screen.</h2>
+          <p>This is the conversion hinge: a fast, useful result that makes people think, “Yep, I would actually use this.”</p>
+          <div class="bullet-stack">
+            <div class="bullet-item">Fast enough for cold traffic</div>
+            <div class="bullet-item">Specific enough to feel personal</div>
+            <div class="bullet-item">Strong enough to justify a paid follow-up</div>
+          </div>
+        </div>
+
+        <div class="planner-card reveal delay-1">
+          <form id="energyForm" class="planner-form">
+            <label>
+              Sleep last night
+              <select name="sleep">
+                <option value="low">Less than 6 hours</option>
+                <option value="mid" selected>6-7.5 hours</option>
+                <option value="high">More than 7.5 hours</option>
+              </select>
+            </label>
+            <label>
+              Current stress level
+              <select name="stress">
+                <option value="high">High</option>
+                <option value="mid" selected>Medium</option>
+                <option value="low">Low</option>
+              </select>
+            </label>
+            <label>
+              Focus level right now
+              <select name="focus">
+                <option value="low">Low</option>
+                <option value="mid">Moderate</option>
+                <option value="high" selected>High</option>
+              </select>
+            </label>
+            <label>
+              Main goal for the next few hours
+              <select name="goal">
+                <option value="deep">Deep work</option>
+                <option value="admin">Admin and cleanup</option>
+                <option value="meetings">Meetings and collaboration</option>
+                <option value="reset">Recovery and reset</option>
+              </select>
+            </label>
+            <button type="submit" class="button button-primary full">Generate my energy plan</button>
+          </form>
+
+          <div class="planner-output" id="plannerOutput">
+            <div class="output-top">
+              <span class="output-label">Suggested next move</span>
+              <strong id="outputScore">74</strong>
+            </div>
+            <h3 id="outputTitle">Use this window for focused execution.</h3>
+            <p id="outputSummary">You have enough mental bandwidth for one high-value task. Protect your attention and postpone reactive work until later.</p>
+            <div class="output-grid">
+              <article>
+                <span>Do now</span>
+                <strong id="outputDo">Writing, strategy, planning</strong>
+              </article>
+              <article>
+                <span>Avoid now</span>
+                <strong id="outputAvoid">Inbox loops and status meetings</strong>
+              </article>
+              <article>
+                <span>Recovery cue</span>
+                <strong id="outputRecover">10-minute movement break in 90 mins</strong>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="audience-section">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div class="eyebrow">Who pays first</div>
+          <h2>Start with people whose brain is already overloaded.</h2>
+        </div>
+        <div class="audience-grid">
+          <article class="audience-card reveal">
+            <h3>Founders</h3>
+            <p>They need help choosing what deserves their best energy, especially when context switching starts eating the day alive.</p>
+          </article>
+          <article class="audience-card reveal delay-1">
+            <h3>Operators</h3>
+            <p>They live inside meetings, execution, and decision fatigue. A better “what now” tool is immediately legible.</p>
+          </article>
+          <article class="audience-card reveal delay-2">
+            <h3>Knowledge workers</h3>
+            <p>They already pay for productivity software. This gives them a more human signal than raw task lists, timers, and dashboards.</p>
+
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div class="eyebrow">Pricing for demand validation</div>
+          <h2>Test willingness to pay without overbuilding.</h2>
+          <p>These plans are framed to find the right buyer behavior fast: curiosity, trial intent, and commitment.</p>
+        </div>
+
+        <div class="billing-toggle reveal">
+          <button type="button" class="billing-btn active" data-billing="monthly">Monthly</button>
+          <button type="button" class="billing-btn" data-billing="yearly">Yearly</button>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <div class="price-tag">Starter</div>
+            <h3>Free</h3>
+            <p>Let people feel the product before you ask for anything serious.</p>
+            <ul>
+              <li>Daily energy snapshot</li>
+              <li>Basic AI guidance</li>
+              <li>Limited weekly history</li>
+            </ul>
+            <a href="#waitlist" class="button button-secondary full">Try for free</a>
+          </article>
+
+          <article class="price-card featured reveal delay-1">
+            <div class="price-tag">Founding Pro</div>
+            <h3><span class="price-value" data-monthly="$9" data-yearly="$79">$9</span><small class="price-unit" data-monthly="/month" data-yearly="/year">/month</small></h3>
+            <p>The offer designed to test if users will actually pay for better clarity, not just browse.</p>
+            <ul>
+              <li>Unlimited AI energy planning</li>
+              <li>Weekly and monthly pattern reports</li>
+              <li>Priority recovery prompts</li>
+              <li>Early access to calendar sync</li>
+            </ul>
+            <a href="#waitlist" class="button button-primary full">Reserve founding price</a>
+          </article>
+
+          <article class="price-card reveal delay-2">
+            <div class="price-tag">Team Pilot</div>
+            <h3>Custom</h3>
+            <p>Use this after consumer demand shows up. It is the bigger-ticket move, not the first hill to climb.</p>
+
+            <ul>
+              <li>Manager view for team energy trends</li>
+              <li>Weekly team rhythm summary</li>
+              <li>Private onboarding support</li>
+            </ul>
+            <a href="#waitlist" class="button button-secondary full">Request pilot</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="shell faq-grid">
+        <div class="section-head reveal">
+          <div class="eyebrow">FAQ</div>
+          <h2>Answer the objections before they bounce.</h2>
+        </div>
+        <div class="faq-list reveal delay-1">
+          <details open>
+            <summary>Is this a medical product?</summary>
+            <p>No. The positioning is focused on productivity, recovery, and self-awareness for work. It should stay well away from medical diagnosis claims.</p>
+          </details>
+          <details>
+            <summary>Why launch on the web first?</summary>
+            <p>Because it is the fastest way to test positioning, activation, and willingness to pay before investing in a full app rollout.</p>
+          </details>
+          <details>
+            <summary>What should be tracked for validation?</summary>
+            <p>Watch planner completions, pricing clicks, waitlist submissions, and how many people choose the paid plan CTA versus the free one.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="waitlist-section" id="waitlist">
+      <div class="shell waitlist-card reveal">
+        <div>
+          <div class="eyebrow">Early access funnel</div>
+          <h2>Collect real buying intent, not polite compliments.</h2>
+          <p>Use this section to capture interest from people willing to try the product and potentially pay. For a real launch, connect this form to Stripe checkout, Formspree, ConvertKit, or your own backend.</p>
+        </div>
+
+        <form id="waitlistForm" class="waitlist-form">
+          <input type="email" name="email" placeholder="name@company.com" required>
+          <select name="intent">
+            <option value="free">I want the free version first</option>
+            <option value="pro">I would test the paid Pro plan</option>
+            <option value="team">I am interested in a team pilot</option>
+          </select>
+          <button type="submit" class="button button-primary">Join founding access</button>
+          <p class="form-note" id="formNote" aria-live="polite">Demo mode stores submissions locally in your browser so you can preview the flow right away. Swap in a real form or Stripe link when you are ready for traffic.</p>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <span>EnergyPilot AI</span>
+      <div class="footer-links">
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+      </div>
+      <span id="footerYear"></span>
+    </div>
+  </footer>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
