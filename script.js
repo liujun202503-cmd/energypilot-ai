@@ -192,6 +192,11 @@ function persistLead(formData) {
 }
 
 function revealOnScroll() {
+  if (!('IntersectionObserver' in window)) {
+    reveals.forEach((element) => element.classList.add('visible'));
+    return;
+  }
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -201,8 +206,16 @@ function revealOnScroll() {
     });
   }, { threshold: 0.16 });
 
-  reveals.forEach((element) => observer.observe(element));
+  reveals.forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.92) {
+      element.classList.add('visible');
+      return;
+    }
+    observer.observe(element);
+  });
 }
+
 
 themeButtons.forEach((button) => {
   button.addEventListener('click', () => {
