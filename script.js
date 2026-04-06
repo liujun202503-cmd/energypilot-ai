@@ -4,7 +4,9 @@ const billingButtons = document.querySelectorAll('.billing-btn');
 const priceValue = document.querySelector('.price-value');
 const priceUnit = document.querySelector('.price-unit');
 const heroScore = document.getElementById('heroScore');
+const scoreRing = document.querySelector('.score-ring');
 const outputScore = document.getElementById('outputScore');
+
 const outputTitle = document.getElementById('outputTitle');
 const outputSummary = document.getElementById('outputSummary');
 const outputDo = document.getElementById('outputDo');

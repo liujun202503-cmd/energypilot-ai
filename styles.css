@@ -304,10 +304,12 @@ button { cursor: pointer; }
   border-radius: 50%;
   display: grid;
   place-items: center;
+  --score-progress: 74;
   background:
     radial-gradient(circle at center, color-mix(in srgb, var(--surface-strong) 78%, transparent) 48%, transparent 50%),
-    conic-gradient(var(--primary) 0 74%, rgba(255, 255, 255, 0.08) 74% 100%);
+    conic-gradient(var(--primary) 0 calc(var(--score-progress) * 1%), rgba(255, 255, 255, 0.08) calc(var(--score-progress) * 1%) 100%);
 }
+
 
 .score-ring__inner {
   width: 78px;
